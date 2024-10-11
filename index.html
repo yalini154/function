@@ -7,12 +7,36 @@
 </head>
 <body>
     <button type="button" onclick="add()"> add </button>
+    <button type="button" onclick="sub()"> sub </button>
+    <button type="button" onclick="multi()"> multi </button>
+    <button type="button" onclick="div()"> div </button>
+    <button type="button" onclick="rem()"> rem </button>
     <p id="add"> </p>
+    <p id="sub"> </p>
+    <p id="multi"> </p>
+    <p id="div"> </p>
+    <p id="rem"> </p>
     <script> 
         var a = 10;
         function add(){
             var b = 6;
             document.getElementById("add").innerHTML=a+b;
+        }
+         function sub(){
+                var b = 6;
+                document.getElementById("sub").innerHTML = a - b;
+        }
+         function multi(){
+                var b = 6;
+                document.getElementById("multi").innerHTML = a * b;
+        }
+         function div(){
+                var b = 6;
+                document.getElementById("div").innerHTML = a / b;
+        }
+         function rem(){
+                var b = 6;
+                document.getElementById("rem").innerHTML = a % b;
         }
     </script>
 </body>
